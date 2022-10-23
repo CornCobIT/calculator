@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { useState } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, Button } from "react-native";
 
 export default function App() {
   const [resultText, setResultText] = useState("");
@@ -188,6 +187,7 @@ const styles = StyleSheet.create({
   number: {
     fontSize: 30,
     color: "white",
+    padding: 30,
   },
   calculation: {
     flex: 1,
