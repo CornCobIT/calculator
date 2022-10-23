@@ -37,9 +37,17 @@ export default function App() {
       <View style={styles.result}>
         <Text style={styles.resultText}>{calcText}</Text>
       </View>
+
+      <View style={styles.history}>
+        <TouchableOpacity>
+          <Text style={styles.historyText}>◷</Text>
+        </TouchableOpacity>
+      </View>
+      
       <View style={styles.calculation}>
         <Text style={styles.calculationText}>{resultText}</Text>
       </View>
+
       <View style={styles.buttons}>
         <View style={styles.numbers}>
           <View style={styles.row}>
@@ -179,6 +187,15 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: "white",
   },
+  history: {
+    backgroundColor: "black",
+    paddingLeft: 25,
+  },
+  historyText: {
+    fontSize: 25,
+    color: "white",
+  },
+
   calculationText: {
     fontSize: 20,
     color: "black",
@@ -187,7 +204,7 @@ const styles = StyleSheet.create({
   number: {
     fontSize: 30,
     color: "white",
-    padding: 30,
+        padding: 30,
   },
   calculation: {
     flex: 1,
